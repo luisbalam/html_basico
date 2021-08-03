@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer ejemplo</title>
+    <style type="text/css">
+        /* aqui se indica que los elementos de clase "titulos" tendran este estilo (este es un comentario!!! en CSS) */
+        .titulos {
+        font-family: Verdana;
+        background-color: DodgerBlue;
+        margin: 0;
+        padding: 20px 0;
+        color: white;
+        /*text-shadow: 3px 3px 1px black;*/
+        }
+
+        body {
+        background-color: #FF9500;
+        padding: 20px 20px 20px 20px;
+        }
+
+        div {
+        background-color: DodgerBlue;
+        border-top-width: 10px;
+        border-right-width: 1em;
+        border-bottom-width: thick;
+        border-left-width: thin;
+        }
+      </style>
+</head>
+<body>
+            <h1 class="titulos"> Uso de etiquetas h (tamaño de titulos y subtitulos) </h1>
+        <h1>Titulo de nivel 1 </h1>
+        <h2>Titulo de nivel 2 </h2>
+        <h3>Titulo de nivel 3 </h3>
+        <h4>Titulo de nivel 4 </h4>
+        <h5>Titulo de nivel 5 </h5>
+        <h6>Titulo de nivel 6 </h6>
+        <br>
+        <h1 class="titulos"> Uso de parrafos </h1>
+        <p>Este es el texto que forma el primer párrafo de la página.
+        Los párrafos pueden ocupar varias líneas y el navegador se encarga
+        de ajustar su longitud al tamaño de la ventana.</p>
+
+        <p>El segundo párrafo de la página también se define encerrando
+        su texto con la etiqueta p. El navegador también se encarga de
+        separar automáticamente cada párrafo.</p>
+        <br>
+        <h1> Ejemplo de parrafos con secciones </h1>
+
+
+        <h1 class="titulos">Titular de la página</h1>
+
+        <p>Párrafo de introducción...</p>
+
+        <h2>La primera sub-sección</h2>
+
+        <p>Párrafo de contenido...</p>
+
+        <h2>Otra subsección</h2>
+
+        <p>Más párrafos de contenido...</p>
+        <br>
+
+        <h1 class="titulos"> Uso de CITAS </h1>
+        <p>Según el W3C, el valor del
+        atributo <em>cite</em> en las etiquetas <strong>blockquote</strong> tiene el
+        siguiente significado:</p>
+
+        <blockquote cite="http://www.w3.org/TR/html401/struct/text.html">"El valor de este atributo
+        es una dirección URL que indica el documento original de la cita."</blockquote>
+        <!-- En las citas se deja un margen del lazo izquierdo al visualizarse -->
+
+        <a name="segunda_seccion"></a>
+        <p>Pellentesque malesuada. In in lacus. Phasellus erat erat, lacinia a, convallis eu, nonummy et, odio. Aenean urna elit, ultrices id, placerat varius, facilisis eget, dolor.</p>
+        <br>
+        <h1 class="titulos"> Uso enlaces y secciones de una página </h1>
+
+        <!-- Enlace normal a una página -->
+        <a href="https://unadmexico.mx/">Ir a la pagina Web de nuestra universidad</a>
+
+
+        <!-- De esta forma se le da un nombre a la sección -->
+        <a name="segunda_seccion"></a>
+        <p>Pellentesque malesuada. In in lacus. Phasellus erat erat, lacinia a, convallis eu, nonummy et, odio. Aenean urna elit, ultrices id, placerat varius, facilisis eget, dolor.</p>
+        <br>
+        <!-- Enlace directo a la segunda sección de la página -->
+        <a href="http://www.ejemplo.com/pagina1.html#segunda_seccion">Enlace a la sección 2 de la página 1</a>
+        <!-- Aqui no funciona, porque no tenemos dicha pagina en linea, pero se puede usar así-->
+        <p>
+        <a href="#segunda_seccion">Enlace a la sección 2 de la página</a> </p>
+        <p>
+        <a href="mailto:nombre@direccion.com" title="Dirección de email para solicitar más información">
+        Solicita más información
+        </a> </p>
+        <!-- De esta manera podemos usar un enlace que nos lleve a escribir un correo electrónico a una dirección con un título específico  -->
+        <br>
+        <h1 class="titulos"> Uso de listas </h1>
+
+        <h1>Menú (Lista desordenada) </h1>
+
+        <ul>
+        <li>Inicio</li>
+        <li>Noticias</li>
+        <li>Artículos</li>
+        <li>Contacto</li>
+        </ul>
+        <br>
+        <h1>Instrucciones (Lista ordenada)</h1>
+
+        <ol>
+        <li>Enchufar correctamente</li>
+        <li>Comprobar conexiones</li>
+        <li>Encender el aparato</li>
+        </ol>
+
+        <br>
+        <h1 class="titulos"> Uso de Imágenes </h1>
+        <p>
+        <img src="imagenes/foto1.jpeg" alt="Fotografía de un paisaje" width="400" height="350" /></p>
+
+        <img src="https://convocatoriaycalificaciones.com/wp-content/uploads/2019/01/unadm-mexico.jpg" alt="Fotografía del logo de unadm" width="400" height="220" />
+        <!-- En caso de no poder visualizarse la imagen aparecerá en el navegador lo que contiene el atributo alt  -->
+        <br>
+        <br>
+        <h1 class="titulos"> Uso de Tablas </h1>
+
+        <h1>Listado de cursos</h1>
+
+        <table>
+        <tr> <!-- elementos de la La primera linea (negrita)  -->
+        <td><strong>Curso</strong></td>
+        <td><strong>Horas</strong></td>
+        <td><strong>Horario</strong></td>
+        </tr>
+
+        <tr> <!-- elementos de la La segunda linea (negrita)  -->
+        <td>CSS</td>
+        <td>20</td>
+        <td>16:00 - 20:00</td>
+        </tr>
+
+        <tr> <!-- elementos de la La tercera linea (negrita)  -->
+        <td>HTML</td>
+        <td>20</td>
+        <td>16:00 - 20:00</td>
+        </tr>
+
+        <tr> <!-- elementos de la La cuarta linea (negrita)  -->
+        <td>Dreamweaver</td>
+        <td>60</td>
+        <td>16:00 - 20:00</td>
+        </tr>
+        </table>
+
+        <br>
+        <h2>Otra tabla más avanzada</h2>
+
+        <h1>Resultado de la búsqueda</h1>
+
+        <table summary="Tabla con los datos de los resultados de la búsqueda">
+        <caption>Resultado de la búsqueda</caption>
+        <tr>
+            <th abbr="Imagen del producto" scope="col">Imagen</th>
+            <th abbr="Datos del producto" scope="col">Datos</th>
+        </tr>
+
+        <tr>
+            <td>
+            <img src="imagenes/portatil.jpeg" alt="Imagen del ordenador portátil" width="400" height="350"/>
+            </td>
+            <td>
+            <h4><a href="#" title="Ver más información sobre el portátil">Portátil - 3 GHz - 4 GB RAM</a></h4>
+            <p><a href="#" title="Comprar el portátil">Comprar:</a> <del>2.990 &euro;</del> <strong>2.599 &euro;</strong></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="imagenes/videocamara.jpg" alt="Imagen de la videocámara" width="400" height="350"/></td>
+            <td>
+            <h4><a href="#" title="Ver más información sobre la videocámara">Videocámara - Alta definición 1080p - 60 GB</a></h4>
+            <p><a href="#" title="Comprar la videocámara">Comprar:</a> <del>1.099 &euro;</del> <strong>999 &euro;</strong></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="imagenes/tv.png" alt="Imagen del televisor" /></td>
+            <td>
+            <h4><a href="#" title="Ver más información sobre el televisor">Televisor - 46" - Full HD</a></h4>
+            <p><a href="#" title="Comprar el televisor">Comprar:</a> <del>1.999 &euro;</del> <strong>1.799 &euro;</strong></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="imagenes/movil.png" alt="Imagen del móvil" /></td>
+            <td>
+            <h4><a href="#" title="Ver más información sobre el móvil">Móvil - 3G - Wi-Fi - 8 GB</a></h4>
+            <p><a href="#" title="Comprar el móvil">Comprar:</a> <del>399 &euro;</del> <strong>349 &euro;</strong></p>
+            </td>
+        </tr>
+        </table>
+        <br>
+        <br>
+
+        <h1 class="titulos"> Uso de formularios </h1>
+        <h3>Rellena tu CV</h3>
+
+        <div>
+        <form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+        Nombre <br/>
+        <input type="text" name="nombre" value="" size="20" maxlength="30" />
+
+        <br/>
+
+        Apellidos <br/>
+        <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+
+        <br/>
+
+        Contraseña <br/>
+        <input type="password" name="contrasena" value="" maxlength="10" />
+
+        <br/>
+
+        DNI <br/>
+        <input type="text" name="dni" value="" size="10" maxlength="9" />
+
+        <br/>
+
+        Sexo <br/>
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre <br/>
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+
+        <br/><br/>
+
+        Incluir mi foto <input type="file" name="foto" />
+
+        <br/><br/>
+
+        <input name="suscribir" type="checkbox" value="suscribir" checked="checked"/> Suscribirme al boletín de novedades
+
+        <br/><br/>
+
+        <input type="submit" name="enviar" value="Guardar cambios" />
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+        </form>
+        </div>
+</body>
+</html>
